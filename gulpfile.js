@@ -14,6 +14,10 @@ gulp.task('build',shell.task([
 
 ]));
 
+gulp.task('push',shell.task([
+  'git push -u origin master'
+
+]));
 
 gulp.task('deploy',shell.task([
    'npm run deploy'
@@ -26,4 +30,4 @@ gulp.task('serve',shell.task([
    
 
 
-gulp.task('default', [ 'deploy','build' ]);
+gulp.task('default', [ 'deploy','build','push' ]);
