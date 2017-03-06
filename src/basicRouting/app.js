@@ -10,11 +10,11 @@ app.post('/', function (req, res) {
 })
 
 app.put('/capitulos/api_router', function (req, res) {
-  res.send('Got a PUT request at /user')
+  res.send('Got a PUT request at /capitulos/api_router')
 })
 
 app.delete('/capitulos/api_router', function (req, res) {
-  res.send('Got a DELETE request at /user')
+  res.send('Got a DELETE request at /capitulos/api_router')
 })
 
 app.listen(8081, function () {

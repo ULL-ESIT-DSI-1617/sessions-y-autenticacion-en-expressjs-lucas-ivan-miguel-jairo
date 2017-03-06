@@ -1,18 +1,17 @@
 var gulp = require('gulp');
-var shell = require('gulp-shell');
 
 
 
-gulp.task('1', function(){
-	return gulp.src('./basicRouting').pipe(shell(['node app.js']));
+gulp.task('prueba1', function(){
+	require('./routing_guide/appall.js');
+});
+
+gulp.task('prueba2', function(){
+	require('./routing_guide/manejadores.js');
+});
+
+gulp.task('prueba3', function(){
+	require('./routing_guide/vias-acceso-ruta.js');
 });
 
 
-gulp.task('2', function(){
-	return gulp.src('./routing_guide').pipe(shell(['node manejadores.js']));
-});
-
-
-gulp.task('3', function(){
-	return gulp.src('./routing_guide').pipe(shell(['node approute.js']));
-});
