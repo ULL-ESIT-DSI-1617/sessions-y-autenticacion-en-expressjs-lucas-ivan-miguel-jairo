@@ -29,13 +29,13 @@ y en qué sitio de la cookie se envía a.
 
 > ### Tipos de Cookies
 
-> * Cookies de sesión - son archivos de cookies temporales, que se borran cuando cierras el navegador.
+> * **Cookies de sesión** - son archivos de cookies temporales, que se borran cuando cierras el navegador.
 Cuando reinicias el navegador y vuelves al sitio que creó la cookie, la página web no te reconocerá. 
 Tendrás que volver a iniciar sesión (si es necesario hacerlo) o seleccionar tus preferencias y temas 
 de nuevo si el sitio utiliza esas funciones.
 Una cookie de sesión nueva se generará y almacenará tu información de navegación,
 permaneciendo activa hasta que abandones la página y cierres el navegador. Más sobre las cookies de sesión.
-* Cookies permanentes - Las cookies permanentes ayudan a los sitios web a recordar tu información y ajustes
+* **Cookies permanentes** - Las cookies permanentes ayudan a los sitios web a recordar tu información y ajustes
 cuando los visitas más adelante. Esto conlleva un acceso más rápido y sencillo ya que, por ejemplo,
 no tienes que iniciar sesión de nuevo. Además de la autentificación, otras páginas web tienen más 
 funciones para las cookies permanentes, como: selección de idioma, selección de tema, preferencias
