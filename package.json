@@ -28,9 +28,13 @@
   "bugs": {
     "url": "https://github.com/ULL-ESIT-DSI-1617/estudiar-las-rutas-en-expressjs-jairo-lucas-miguel-ivan/issues"
   },
+  "engines": {
+    "node": "^0.10.1"
+  },
   "homepage": "https://github.com/ULL-ESIT-DSI-1617/estudiar-las-rutas-en-expressjs-jairo-lucas-miguel-ivan#readme",
   "devDependencies": {
     "async": "^1.4.0",
+    "express": "^4.15.2",
     "fs-extra": "^0.22.1",
     "gh-pages": "^0.3.1",
     "gitbook": "^2.1.0",
