@@ -10,13 +10,13 @@ var proces = require('child_process');
 
 
 
-app.set('port', (process.env.PORT || 8080));
-app.use(express.static('gh-pages'));
+app.set('port', (process.env.PORT || 5000));
+app.use(express.static('_book'));
 
 
 
 app.get('/', function(request, response){
-  response.render('index');  
+  response.sendfile('index');  
   
 });
 
