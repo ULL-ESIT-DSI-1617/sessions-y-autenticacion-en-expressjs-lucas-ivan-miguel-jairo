@@ -1,4 +1,5 @@
 ## Compatibilidad Navegador
+
 > ```javascript
 > Soporte básico Chrome: si Firefox: si
 > Max-Edad : Chrome: si Firefox: si

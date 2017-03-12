@@ -1,4 +1,5 @@
 ## Ejemplos
+
 > Cookie de sesión : Este tipo de cookie se elimina cuando el equipo se apaga
 > ```javascript
 Set-Cookie: sessionid=38afes7a8; httponly; Path=/

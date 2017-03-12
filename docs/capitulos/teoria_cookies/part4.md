@@ -1,4 +1,5 @@
 ## Estandar RFC
+
 > Los RFC mas conocidos sobre cookie son:
 > ```javascript
 RFC 6265, sección 4.1: Set-Cookie : Mecanismo de HTTP Estado de Gestión
