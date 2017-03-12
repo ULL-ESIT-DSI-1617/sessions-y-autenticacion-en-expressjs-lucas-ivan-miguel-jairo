@@ -80,3 +80,16 @@
 * [Router API](capitulos/api_router/part1.md)
     * [¿Qué es?](capitulos/api_router/part1.md)
     * [Métodos](capitulos/api_router/part2.md)
+
+----
+
+* [Query String](capitulos/queryString/part1.md)
+    * [Query String](capitulos/queryString/part1.md)
+
+----
+
+* [Cookie Parser](capitulos/cookieParser/part1.md)
+    * [Cookie Parser](capitulos/cookieParser/part1.md)
+    * [Ejemplo](capitulos/cookieParser/ejemplo.md)
+
+
