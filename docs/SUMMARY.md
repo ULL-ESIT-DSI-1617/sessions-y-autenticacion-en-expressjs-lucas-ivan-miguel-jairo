@@ -80,7 +80,17 @@
 * [Router API](capitulos/api_router/part1.md)
     * [¿Qué es?](capitulos/api_router/part1.md)
     * [Métodos](capitulos/api_router/part2.md)
-<<<<<<< HEAD
+
+----
+
+* [Cookie](capitulos/cookies/part1.md)
+    * [Cookie](capitulos/cookies/part1.md)
+    * [Inspector de Almacenamiento](capitulos/cookies/part2.md)
+
+----
+
+* [Cookie Management](capitulos/cookie_management/part1.md)
+    * [Cookie Management](capitulos/cookie_management/part1.md)
 
 ----
 
@@ -94,7 +104,6 @@
     * [Ejemplo](capitulos/cookieParser/ejemplo.md)
 
 
-=======
 ---- 
 
 * [Teoria Cookies](capitulos/teoria_cookies/part1.md)
@@ -103,4 +112,4 @@
     * [Ejemplos](capitulos/teoria_cookies/part3.md)
     * [Estandar RFC](capitulos/teoria_cookies/part4.md)
     * [Compatibilidad Navegador](capitulos/teoria_cookies/part5.md)
->>>>>>> miguel
+
