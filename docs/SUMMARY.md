@@ -80,6 +80,7 @@
 * [Router API](capitulos/api_router/part1.md)
     * [¿Qué es?](capitulos/api_router/part1.md)
     * [Métodos](capitulos/api_router/part2.md)
+<<<<<<< HEAD
 
 ----
 
@@ -93,3 +94,13 @@
     * [Ejemplo](capitulos/cookieParser/ejemplo.md)
 
 
+=======
+---- 
+
+* [Teoria Cookies](capitulos/teoria_cookies/part1.md)
+    * [Sintaxis](capitulos/teoria_cookies/part1.md)
+    * [Directivas](capitulos/teoria_cookies/part2.md)
+    * [Ejemplos](capitulos/teoria_cookies/part3.md)
+    * [Estandar RFC](capitulos/teoria_cookies/part4.md)
+    * [Compatibilidad Navegador](capitulos/teoria_cookies/part5.md)
+>>>>>>> miguel
