@@ -15,7 +15,7 @@ app.use(express.static('gh-pages'));
 
 
 app.get('/', function(request, response){
-  response.send('index');  
+  response.render('index');  
 });
 
 
