@@ -74,7 +74,7 @@ res.cookie(name, 'value', {maxAge : 9999});
 
 > ```javascript
 app.get('/clearcookie', function(req,res){
-     clearCookie('cookie_name');
+     res.clearCookie('cookie_name');
      res.send('Cookie deleted');
 });
 
