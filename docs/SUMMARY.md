@@ -112,4 +112,7 @@
     * [Ejemplos](capitulos/teoria_cookies/part3.md)
     * [Estandar RFC](capitulos/teoria_cookies/part4.md)
     * [Compatibilidad Navegador](capitulos/teoria_cookies/part5.md)
+    
+* [Sessions](capitulos/sessions/part1.md)
+    * [Introducción sesiones](capitulos/cookieParser/part1.md)
 
