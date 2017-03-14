@@ -1,5 +1,3 @@
-#!/bin/sh
 
-CMDDESC="Generate GitBook"
 
-./node_modules/.bin/gitbook build ./docs ./gh-pages
+gitbook build `pwd` ./gh-pages
