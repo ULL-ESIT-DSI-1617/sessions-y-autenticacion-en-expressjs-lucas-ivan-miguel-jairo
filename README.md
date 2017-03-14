@@ -11,6 +11,7 @@
     * [JAIRO](http://10.6.129.250:8084/)
     * [IVAN](http://10.6.128.175:8085/)
     * [LUCAS](http://10.6.129.243:8083/)
+    * [MIGUEL](http://10.6.129.246:8082/)
 * Despliegue en Heroku
     * [Enlace Heroku](https://dsi-pract4.herokuapp.com/)
 * [Enlace a instrucciones de la práctica](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/practicas/practicalearningcookies.html)
