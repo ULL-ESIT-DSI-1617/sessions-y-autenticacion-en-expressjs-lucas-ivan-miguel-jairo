@@ -11,7 +11,7 @@ let bodyParser = require('body-parser')
 
 let bcrypt = require("bcrypt-nodejs");
 let hash = bcrypt.hashSync("armichepass");
-
+var salt = bcrypt.genSaltSync(10);
 
 var users = require('./users.json')
 var fs = require('fs');
@@ -128,7 +128,7 @@ app.get('/registro', function(req, res) {
 app.post('/reg', function (req, res) {
 
   var obj = require('./users.json');
-  obj[req.body.username] = req.body.password;
+  obj[req.body.username] = bcrypt.hashSync(req.body.password, salt);
   fs.writeFile('./users.json', JSON.stringify(obj), function (err) {
     console.log(err);
   });
