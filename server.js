@@ -31,8 +31,8 @@ app.use(session({
 }));
 
 app.use(function(req, res, next) {
-  console.log("Cookies :  "+ util.inspect(req.cookies));
-  console.log("session :  "+ util.inspect(req.session));
+  //console.log("Cookies :  "+ util.inspect(req.cookies));
+  //console.log("session :  "+ util.inspect(req.session));
   next();
 });
 
@@ -44,8 +44,10 @@ app.use(bodyParser.json());
 
 // Authentication and Authorization Middleware
 let auth = function(req, res, next) {
-  if (req.session && req.session.user in users)
+  if (req.session && req.session.user in users){
+    
     return next();
+  }
   else{
      //  return res.render('login', {message: 'User NOT registred'+res.sendStatus(401)}); 
        return res.sendStatus(401); // https://httpstatuses.com/401
@@ -56,7 +58,7 @@ let auth = function(req, res, next) {
 
 //Login endpoint
 app.post('/login', function (req, res) {
-  
+  console.log(req.session.user+"dee");
   
   if (!req.body.username || !req.body.password) {
       
@@ -93,6 +95,9 @@ app.get('/actualiza', function(req, res) {
   res.render('actualizarcontraseña', {message: 'Welcome!'});
 });
 
+app.get('/libro', function(req, res) {
+    res.render('libro', {message: 'Bienvenido '})
+})
 
 //Guardar los usuarios en users.json después de hacer el registro
 app.post('/reg', function (req, res) {
@@ -130,6 +135,7 @@ app.post('/act', function (req, res)
   {
            
             req.session.user = req.body.username;
+            console.log(req.session.user + "muestrsl");
             req.session.admin = true;
             
             var obj = require('./users.json');
@@ -157,14 +163,11 @@ app.use(express.static('public/materialize/js'));
 // Logout endpoint
 app.get('/logout', function (req, res) {
    req.session.destroy();
-   res.send("logout success!");
+   res.render('index',{message: "Bienvenido"});
 });
 
-
 // Get content endpoint
-app.get('/content/*?',
-    auth  // next only if authenticated
-);
+app.get('/content/*?',auth );
 app.use('/content', express.static(path.join(__dirname, 'gh-pages')));
 
 

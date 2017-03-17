@@ -18,7 +18,7 @@
 <link href="login-box.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body class="#263238 blue-grey darken-4">
+<body >
     <div class="navbar-fixed">
   <nav>
     <div class="nav-wrapper">
@@ -28,7 +28,7 @@
          <li><a href="/registro">Registrarse</a></li>
          <li><a href="/loguearse">Login</a></li>
          <li><a href="/actualiza">Actualizar Contraseña</a></li>
-         <li><a href="/contet">Libro</a></li>
+         <li><a href="/libro">Libro</a></li>
          <li><a href="/logout">Cerrar Sesion</a></li>
       </ul>
     </div>
@@ -36,41 +36,50 @@
   </div>
   <br />
   <br />
-  <div class="container" >
-  <div class="row #90caf9 blue lighten-3" >
+  <div class="container-fluid" >
+  <div class="row" >
             
-                <div class="col s6">
-                 <img src="libro.png" width="400px"/>
+                <div class="col s6 center ">
+                 <img id="imagen" src="libro.png" width="400px" />
                  </div>
                 
-                <div class="col s6">
-                     <form method="post" id="login-box" action="/login" class="col s6">
-        <div class="row">
-       <div class="col s12 center">
+                <div class="col s6 center ">
+                       <div class="row">
+                           <div class="col s2">
+                               </div>
+       <div class="col s8">
+           <form method="post" id="login-box" action="/login" >
+      
          <H2>Login</H2>
          
      </div>
       </div>
       
       <div class="row">
-        <div class="input-field col s12 m12">
+          <div class="col s4"></div>
+        <div class="input-field col s5 m5">
           <input name="username" type="text" >
           <label for="username">Username</label>
         </div>
+        <div class="col s3"></div>
       </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input name="password" type="password" class="validate">
+       <div class="row">
+          <div class="col s4"></div>
+        <div class="input-field col s5 m5">
+          <input name="password" type="password" >
           <label for="password">Password</label>
         </div>
+        <div class="col s3"></div>
       </div>
+      
       <div class="row">
-        <div class="input-field col s12">
+        <div class="input-field col s12 center">
           <input type="submit" class="validate waves-effect waves-light btn" value="Login" />
+       </form>
         </div>
       </div>
       
-    </form>
+    
                 </div>
          </div>
   </div>
