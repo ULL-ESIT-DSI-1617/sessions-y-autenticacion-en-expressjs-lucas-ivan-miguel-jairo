@@ -19,6 +19,7 @@
 </head>
 
 <body class="#263238 blue-grey darken-4">
+    <div class="navbar-fixed">
   <nav>
     <div class="nav-wrapper">
       <a href="#" class="brand-logo right"><%- message %></a>
@@ -32,16 +33,45 @@
       </ul>
     </div>
   </nav>
+  </div>
   <br />
   <br />
   <div class="container" >
   <div class="row #90caf9 blue lighten-3" >
-            <div class="col s6">
-                <h2>Practica</h2>
-                <p>dsafdsf
-                    
-                </p>  
-            </div>
+            
+                <div class="col s6">
+                 <img src="libro.png" width="400px"/>
+                 </div>
+                
+                <div class="col s6">
+                     <form method="post" id="login-box" action="/login" class="col s6">
+        <div class="row">
+       <div class="col s12 center">
+         <H2>Login</H2>
+         
+     </div>
+      </div>
+      
+      <div class="row">
+        <div class="input-field col s12 m12">
+          <input name="username" type="text" >
+          <label for="username">Username</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input name="password" type="password" class="validate">
+          <label for="password">Password</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input type="submit" class="validate waves-effect waves-light btn" value="Login" />
+        </div>
+      </div>
+      
+    </form>
+                </div>
          </div>
   </div>
 

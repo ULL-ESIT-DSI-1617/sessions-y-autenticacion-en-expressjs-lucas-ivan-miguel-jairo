@@ -19,6 +19,7 @@
 </head>
 
 <body class="#263238 blue-grey darken-4">
+  <div class="navbar-fixed">
   <nav>
     <div class="nav-wrapper">
       <a href="#" class="brand-logo right"><%- message %></a>
@@ -28,10 +29,11 @@
          <li><a href="/loguearse">Login</a></li>
          <li><a href="/actualiza">Actualizar Contraseña</a></li>
          <li><a href="/contet">Libro</a></li>
-         <li><a href="/logout">Cerrar Sesion</a></li
+         <li><a href="/logout">Cerrar Sesion</a></li>
       </ul>
     </div>
   </nav>
+  </div>
   <br />
   <br />
   <div class="container" >
@@ -59,8 +61,8 @@
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input name="repeat-password" type="password" class="validate">
-          <label for="repeat-password">Repite password:</label>
+          <input name="password2" type="password" class="validate">
+          <label for="password2">Repite password:</label>
         </div>
       </div>
       <div class="row">

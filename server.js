@@ -56,19 +56,16 @@ let auth = function(req, res, next) {
 
 //Login endpoint
 app.post('/login', function (req, res) {
-  console.log("aaaaaaaaaaaaaaa" + req.body.username);
-    console.log("aaaaaaaaaaaaaaa" + req.body.password);
-  console.log('username',users[req.body.username]);
+  
   
   if (!req.body.username || !req.body.password) {
-       console.log('login failedaaaaaaaaaaa' + req.body.username);
-       console.log('login failedaaaaaaaaaaa' + req.body.password);
-       res.send('login failedaa');
+      
+       res.render('login',{message: 'Campo vacio'});
   } else if(req.body.username in users  &&
             bcrypt.compareSync(req.body.password, users[req.body.username])) {
             req.session.user = req.body.username;
             req.session.admin = true;
-            res.redirect('/content');
+            res.render('libro', {message:"Bienvenido "+req.body.username});
   } else {
           console.log(`login ${util.inspect(req.query)} failed`);
           res.render('login',{message: 'Failed. You are user not logged'});
@@ -101,31 +98,36 @@ app.get('/actualiza', function(req, res) {
 app.post('/reg', function (req, res) {
   var obj = require('./users.json');
   
-  console.log("Usuarioa" + req.body.username);
-  console.log("aaaaaaaaaaaaaaa" + req.body.password);
-  console.log('username',bcrypt.hashSync(users[req.body.username]));
-  console.log('username',users[req.body.password]);
   
-  obj[req.body.username] = bcrypt.hashSync(req.body.password, salt);
-  console.log("Mi objeto "+ obj);
-  fs.writeFile('./users.json', JSON.stringify(obj), function (err) {
-          console.log(err);
-  });
-   console.log('User registred');
-    res.render('registro', {message: 'User registred'});
+ if(req.body.password == req.body.password2 && !(req.body.username in users) )
+  {
+        obj[req.body.username] = bcrypt.hashSync(req.body.password, salt);
+        console.log("Mi objeto "+ obj);
+        fs.writeFile('./users.json', JSON.stringify(obj,"",4), function (err) {
+                console.log(err);
+        });
+    console.log('User registred');
+  
+   res.render('login');
+  }
+   else
+    res.render('registro', {message: 'Registro incorrecto'});
   // res.send('User registred');
 });
 
 //Actualizar el password del usuario.
 app.post('/act', function (req, res)
 {
-  console.log(req.query);
-  console.log('username',users[req.body.username]);
-  if (!req.body.username || !req.body.password) {
+  
+  if (!req.body.username || !req.body.password) 
+  {
         console.log('failed update');
         res.send('failed update');
-  } else if(req.body.username in users  &&
-            bcrypt.compareSync( req.body.password, users[req.body.username])) {
+  } 
+  
+  else if(req.body.username in users  &&
+            bcrypt.compareSync( req.body.password, users[req.body.username])) 
+  {
            
             req.session.user = req.body.username;
             req.session.admin = true;
@@ -133,12 +135,11 @@ app.post('/act', function (req, res)
             var obj = require('./users.json');
             obj[req.body.username] = bcrypt.hashSync(req.body.newpassword, salt);
             console.log("Este es mi nuevo password : " + req.body.username);
-           /* fs.writeFile('./users.json', JSON.stringify(obj), function (err) {
-                  console.log(err);
-            });*/
-           // res.redirect('/actualiza');
- res.render('actualizarcontraseña',{message: 'Actualizado la contraseña' });
-  } else {
+           
+          res.render('login',{message: 'Actualizado la contraseña' });
+  } 
+  else 
+  {
     console.log(`Update ${util.inspect(req.query)} failed`);
     //res.send(layout(`login ${util.inspect(req.query)} failed. You are ${req.session.user || 'not logged'}`));
   }
