@@ -37,17 +37,17 @@
   <div class="container" >
   <div class="row #90caf9 blue lighten-3" >
    
-      <form method="post" id="login-box" action="/login" class="col s6">
+      <form method="post" id="login-box" action="/act" class="col s6">
         <div class="row">
        <div class="col s12 center">
-         <H2>Login</H2>
+         <h2>Actualiza Contraseña</h2>
          
      </div>
       </div>
       
       <div class="row">
         <div class="input-field col s12 m12">
-          <input name="username" type="text" >
+          <input name="username" type="text" class="validate" >
           <label for="username">Username</label>
         </div>
       </div>
@@ -59,19 +59,21 @@
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input type="submit" class="validate waves-effect waves-light btn" value="Login" />
+          <input name="newpassword" type="password" class="validate">
+          <label for="newpassword">Nuevo password:</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="actualiza" type="submit" class="validate waves-effect waves-light btn" value="Actualiza" />
         </div>
       </div>
       
     </form>
     <div class="col s6">
-         <h2 class="center">Funcionamiento de login</h2>
-         <p> Enviaremos un post al pulsar el boton tipo submit login. Lo resiviremos en 
-             el servidor nodejs y gracias a express y un conjunto de librerias podemos
-             comprobar la existetcia del usuario o no. Si existe nuestro usuario
-             en nuestro archivo users.json y la constraseña es las misma que tenermos rejistrada
-             en este archivo podemos seguor a la siguente pagina que en nuestro caso es 
-             un libro creado con gitboock.En caso contrario nos dara un error.
+         <h2 class="center">Funcionamiento de Actualizar</h2>
+         <p> 
+             Explicar registro.
          </P>
       
        
@@ -89,3 +91,4 @@
 
 </body>
 </html>
+
