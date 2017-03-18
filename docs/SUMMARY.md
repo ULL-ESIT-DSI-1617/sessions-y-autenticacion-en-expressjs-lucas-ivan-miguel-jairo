@@ -116,3 +116,10 @@
 * [Sessions](capitulos/sessions/part1.md)
     * [Introducción sesiones](capitulos/cookieParser/part1.md)
 
+----
+
+* [Práctica de Sesiones y Cookies](capitulos/practica_sessiones_cookie/part1.md)
+    * [Insercion de datos en Json](capitulos/practica_sessiones_cookie/part1.md)
+    * [Modificar Contraseña del Json](capitulos/practica_sessiones_cookie/part2.md)
+    * [Interfaz con Materialize](capitulos/practica_sessiones_cookie/part3.md)
+
