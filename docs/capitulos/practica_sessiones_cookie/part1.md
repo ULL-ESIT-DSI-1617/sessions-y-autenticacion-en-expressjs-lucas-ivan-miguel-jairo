@@ -24,9 +24,9 @@ var obj = require('./users.json');
 });
 ```
 > En este imagen podemos ver la interfaz grafica del home
-
+>
 > ![](/imagenes/practica_sessiones_cookie/home.png)
-
+>
 > En este imagen podemos ver la interfaz grafica de registrarse
-
+>
 > ![](/imagenes/practica_sessiones_cookie/registro.png)

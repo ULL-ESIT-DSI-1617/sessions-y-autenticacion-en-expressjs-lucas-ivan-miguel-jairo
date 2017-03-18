@@ -34,5 +34,6 @@ app.post('/act', function (req, res)
 ```
 
 > En la siguiente imagen podemos ver una captura del formulario de actualizacion de contraseña
+>
 > ![](/imagenes/practica_sessiones_cookie/actualizar.png)
 
