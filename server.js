@@ -1,4 +1,3 @@
-//authsession.js
 "use strict";
 let express = require('express'),
     app = express(),
@@ -9,9 +8,6 @@ let util = require("util");
 let bodyParser = require('body-parser')
 
 let bcrypt = require("bcrypt-nodejs");
-let hash = bcrypt.hashSync("armichepass");
-var salt = bcrypt.genSaltSync(10);
-
 
 var users = require('./users.json')
 var fs = require('fs');
@@ -79,20 +75,20 @@ app.post('/login', function (req, res) {
 
 app.get('/', function(req, res) {
   //res.render('inicio');
-  res.render('index', {message: 'Welcome!'});
+  res.render('index', {message: 'Bienvenido!'});
   
 });
 
 app.get('/loguearse', function(req, res) {
-  res.render('login', {message: 'Welcome!'});
+  res.render('login', {message: 'Bienvenido!'});
 });
 
 app.get('/registro', function(req, res) {
-  res.render('registro', {message: 'Welcome!'});
+  res.render('registro', {message: 'Bienvenido!'});
 });
 
 app.get('/actualiza', function(req, res) {
-  res.render('actualizarcontraseña', {message: 'Welcome!'});
+  res.render('actualizarcontraseña', {message: 'Bienvenido!'});
 });
 
 app.get('/libro', function(req, res) {
@@ -106,7 +102,7 @@ app.post('/reg', function (req, res) {
   
  if(req.body.password == req.body.password2 && !(req.body.username in users) )
   {
-        obj[req.body.username] = bcrypt.hashSync(req.body.password, salt);
+        obj[req.body.username] = bcrypt.hashSync(req.body.password);
         console.log("Mi objeto "+ obj);
         fs.writeFile('./users.json', JSON.stringify(obj,"",4), function (err) {
                 console.log(err);
@@ -139,7 +135,7 @@ app.post('/act', function (req, res)
             req.session.admin = true;
             
             var obj = require('./users.json');
-            obj[req.body.username] = bcrypt.hashSync(req.body.newpassword, salt);
+            obj[req.body.username] = bcrypt.hashSync(req.body.newpassword);
             console.log("Este es mi nuevo password : " + req.body.username);
            
           res.render('login',{message: 'Actualizado la contraseña' });

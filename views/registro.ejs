@@ -48,26 +48,30 @@
       </div>
       
       <div class="row">
-        <div class="input-field col s12 m12">
-          <input name="username" type="text" class="validate" >
+        <div class="col s3"></div>
+        <div class="input-field col s9 m5">
+          <input name="username" type="text" >
           <label for="username">Username</label>
         </div>
       </div>
       <div class="row">
-        <div class="input-field col s12">
+        <div class="col s3"></div>
+        <div class="input-field col s9 m5">
           <input name="password" type="password" class="validate">
           <label for="password">Password</label>
         </div>
       </div>
       <div class="row">
-        <div class="input-field col s12">
+        <div class="col s3"></div>
+        <div class="input-field col s9 m5">
           <input name="password2" type="password" class="validate">
           <label for="password2">Repite password:</label>
         </div>
       </div>
       <div class="row">
-        <div class="input-field col s12">
-          <input type="submit" class="validate waves-effect waves-light btn" value="Registrar" />
+        <div class="col s3"></div>
+        <div class="input-field col s9">
+          <button type="submit" class="validate waves-effect waves-light btn" value="Registrar" />REgistrar</button>
         </div>
       </div>
       
@@ -75,7 +79,12 @@
     <div class="col s6">
          <h2 class="center">Funcionamiento de Registro</h2>
          <p> 
-             Explicar registro.
+             Enviaremos un post al pulsar el boton Registrar. Lo recibiremos en 
+             el servidor nodejs y guardaremos en un json ese usuario que se registra,comprobando
+             que las contraseñas que introduce son las mismas y que ese nombre de usuario no está 
+             registrado en el json,en caso de que se cumpla,te envía al Login para iniciar sesión,
+             en caso contrario te vuelve a enviar a Registro.
+             
          </P>
       
        

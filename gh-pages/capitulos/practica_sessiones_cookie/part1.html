@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Middleware de nivel de aplicación · GitBook</title>
+        <title>Práctica de Sesiones y Cookies · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -73,10 +73,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="part3.html" />
+    <link rel="next" href="part1.html" />
     
     
-    <link rel="prev" href="part1.html" />
+    <link rel="prev" href="../cookieParser/part1.html" />
     
 
     </head>
@@ -690,9 +690,9 @@
         
         
     
-        <li class="chapter " data-level="11.1" data-path="part1.html">
+        <li class="chapter " data-level="11.1" data-path="../express_middleware/part1.html">
             
-                <a href="part1.html">
+                <a href="../express_middleware/part1.html">
             
                     
                     Middleware
@@ -704,9 +704,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="11.1.1" data-path="part1.html">
+        <li class="chapter " data-level="11.1.1" data-path="../express_middleware/part1.html">
             
-                <a href="part1.html">
+                <a href="../express_middleware/part1.html">
             
                     
                     Introduccion Middleware
@@ -717,9 +717,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="11.1.2" data-path="part2.html">
+        <li class="chapter " data-level="11.1.2" data-path="../express_middleware/part2.html">
             
-                <a href="part2.html">
+                <a href="../express_middleware/part2.html">
             
                     
                     Middleware de nivel de aplicación
@@ -730,9 +730,9 @@
             
         </li>
     
-        <li class="chapter " data-level="11.1.3" data-path="part3.html">
+        <li class="chapter " data-level="11.1.3" data-path="../express_middleware/part3.html">
             
-                <a href="part3.html">
+                <a href="../express_middleware/part3.html">
             
                     
                     Middleware de nivel enrutador
@@ -743,9 +743,9 @@
             
         </li>
     
-        <li class="chapter " data-level="11.1.4" data-path="part4.html">
+        <li class="chapter " data-level="11.1.4" data-path="../express_middleware/part4.html">
             
-                <a href="part4.html">
+                <a href="../express_middleware/part4.html">
             
                     
                     Middleware de gestión de errores
@@ -756,9 +756,9 @@
             
         </li>
     
-        <li class="chapter " data-level="11.1.5" data-path="part5.html">
+        <li class="chapter " data-level="11.1.5" data-path="../express_middleware/part5.html">
             
-                <a href="part5.html">
+                <a href="../express_middleware/part5.html">
             
                     
                     Built-in middleware
@@ -769,9 +769,9 @@
             
         </li>
     
-        <li class="chapter " data-level="11.1.6" data-path="part6.html">
+        <li class="chapter " data-level="11.1.6" data-path="../express_middleware/part6.html">
             
-                <a href="part6.html">
+                <a href="../express_middleware/part6.html">
             
                     
                     Middleware de terceros
@@ -1151,9 +1151,9 @@
         
         
     
-        <li class="chapter " data-level="18.1" data-path="../practica_sessiones_cookie/part1.html">
+        <li class="chapter active" data-level="18.1" data-path="part1.html">
             
-                <a href="../practica_sessiones_cookie/part1.html">
+                <a href="part1.html">
             
                     
                     Práctica de Sesiones y Cookies
@@ -1165,9 +1165,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="18.1.1" data-path="../practica_sessiones_cookie/part1.html">
+        <li class="chapter active" data-level="18.1.1" data-path="part1.html">
             
-                <a href="../practica_sessiones_cookie/part1.html">
+                <a href="part1.html">
             
                     
                     Insercion de datos en Json
@@ -1178,9 +1178,9 @@
             
         </li>
     
-        <li class="chapter " data-level="18.1.2" data-path="../practica_sessiones_cookie/part2.html">
+        <li class="chapter " data-level="18.1.2" data-path="part2.html">
             
-                <a href="../practica_sessiones_cookie/part2.html">
+                <a href="part2.html">
             
                     
                     Modificar Contraseña del Json
@@ -1191,9 +1191,9 @@
             
         </li>
     
-        <li class="chapter " data-level="18.1.3" data-path="../practica_sessiones_cookie/part3.html">
+        <li class="chapter " data-level="18.1.3" data-path="part3.html">
             
-                <a href="../practica_sessiones_cookie/part3.html">
+                <a href="part3.html">
             
                     
                     Interfaz con Materialize
@@ -1239,7 +1239,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >Middleware de nivel de aplicación</a>
+        <a href="../.." >Práctica de Sesiones y Cookies</a>
     </h1>
 </div>
 
@@ -1254,67 +1254,36 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <blockquote>
-<h2 id="middleware-de-nivel-de-aplicaci&#xF3;n">Middleware de nivel de aplicaci&#xF3;n</h2>
-<p>Los middleware a nivel a aplicacion ejecutan el metodo app.use donde le pasamos req , resp y de manera opcional el next
-Ejemplos de codigo de middleware
-Ejemplo de un middleware sin ruta de montaje</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> app = express()
-app.use(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res, next</span>) </span>{
-  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Time:&apos;</span>, <span class="hljs-built_in">Date</span>.now())
-  next()
-})
+                                <h2 id="insercion-de-datos-en-json">Insercion de datos en Json</h2>
+<blockquote>
+<p>Primero se comprueba que el usuario este en la base de datos y segundo se mira que las dos contrase&#xF1;as insertadas sean iguales.
+Para la insercion de datos en un Json se guarda en una variable el JSON y por medio del objeto asignamos la nueva contrase&#xF1;a del body al usuario
+para escribir en disco se utilza la clase FS y se le pasa el metodo writefile para poder escribir en el json.
+A continuaci&#xF3;n podemos ver el codigo de la explicaci&#xF3;n</p>
+<pre><code class="lang-javascript">app.post(<span class="hljs-string">&apos;/reg&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res</span>) </span>{
+<span class="hljs-keyword">var</span> obj = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./users.json&apos;</span>);
+ <span class="hljs-keyword">if</span>(req.body.password == req.body.password2 &amp;&amp; !(req.body.username <span class="hljs-keyword">in</span> users) )
+  {
+        obj[req.body.username] = bcrypt.hashSync(req.body.password, salt);
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Mi objeto &quot;</span>+ obj);
+        fs.writeFile(<span class="hljs-string">&apos;./users.json&apos;</span>, <span class="hljs-built_in">JSON</span>.stringify(obj,<span class="hljs-string">&quot;&quot;</span>,<span class="hljs-number">4</span>), <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err</span>) </span>{
+                <span class="hljs-built_in">console</span>.log(err);
+        });
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;User registred&apos;</span>);
+   res.render(<span class="hljs-string">&apos;login&apos;</span>);
+  }
+   <span class="hljs-keyword">else</span>
+    res.render(<span class="hljs-string">&apos;registro&apos;</span>, {message: <span class="hljs-string">&apos;Registro incorrecto&apos;</span>});
+  <span class="hljs-comment">// res.send(&apos;User registred&apos;);</span>
+});
 </code></pre>
-<p>Ejemplo de middleware con punto de montaje</p>
-<pre><code class="lang-javascript">app.use(<span class="hljs-string">&apos;/user/:id&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res, next</span>) </span>{
-  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Request Type:&apos;</span>, req.method)
-  next()
-})
-</code></pre>
-<p>Ejemplo de middleware manejando el controlador GET</p>
-<pre><code class="lang-javascript">app.get(<span class="hljs-string">&apos;/user/:id&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res, next</span>) </span>{
-  res.send(<span class="hljs-string">&apos;USER&apos;</span>)
-})
-</code></pre>
-<p>Esto es un codigo de ejemplo de un middleware donde se trabaja con una subpila</p>
-<pre><code class="lang-javascript">app.use(<span class="hljs-string">&apos;/user/:id&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res, next</span>) </span>{
-  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Request URL:&apos;</span>, req.originalUrl)
-  next()
-}, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res, next</span>) </span>{
-  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Request Type:&apos;</span>, req.method)
-  next()
-})
-</code></pre>
-<p>Esto es una ejemplo de middleware donde se maneja dos rutas por medio de handler pero el segundo middleware no se podra ejecutar ya que la peticion respuesta ya se ha hecho con anterioridad</p>
-<pre><code class="lang-javascript">app.get(<span class="hljs-string">&apos;/user/:id&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res, next</span>) </span>{
-  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;ID:&apos;</span>, req.params.id)
-  next()
-}, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res, next</span>) </span>{
-  res.send(<span class="hljs-string">&apos;User Info&apos;</span>)
-})
-<span class="hljs-comment">// handler for the /user/:id path, which prints the user ID</span>
-app.get(<span class="hljs-string">&apos;/user/:id&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res, next</span>) </span>{
-  res.end(req.params.id)
-})
-</code></pre>
-<p>utilize next(&apos;route&apos;) para pasar el testigo al siguiente middleware de la pila</p>
-<pre><code class="lang-javascript">app.get(<span class="hljs-string">&apos;/user/:id&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res, next</span>) </span>{
-  <span class="hljs-comment">// if the user ID is 0, skip to the next route</span>
-  <span class="hljs-keyword">if</span> (req.params.id === <span class="hljs-string">&apos;0&apos;</span>) next(<span class="hljs-string">&apos;route&apos;</span>)
-  <span class="hljs-comment">// otherwise pass the control to the next middleware function in this stack</span>
-  <span class="hljs-keyword">else</span> next()
-}, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res, next</span>) </span>{
-  <span class="hljs-comment">// render a regular page</span>
-  res.render(<span class="hljs-string">&apos;regular&apos;</span>)
-})
-<span class="hljs-comment">// handler for the /user/:id path, which renders a special page</span>
-app.get(<span class="hljs-string">&apos;/user/:id&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res, next</span>) </span>{
-  res.render(<span class="hljs-string">&apos;special&apos;</span>)
-})
-</code></pre>
+<p>En este imagen podemos ver la interfaz grafica del home</p>
+<p><img src="../../imagenes/practica_sessiones_cookie/home.png" alt=""></p>
+<p>En este imagen podemos ver la interfaz grafica de registrarse</p>
+<p><img src="../../imagenes/practica_sessiones_cookie/registro.png" alt=""> </p>
 </blockquote>
 <footer class="page-footer-ex"> <span class="page-footer-ex-copyright">mrcode</span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="page-footer-ex-footer-update">update
-2017-03-17 10:11:07
+2017-03-19 14:34:02
 </span></footer>
                                 
                                 </section>
@@ -1342,12 +1311,12 @@ app.get(<span class="hljs-string">&apos;/user/:id&apos;</span>, <span class="hlj
 
             
                 
-                <a href="part1.html" class="navigation navigation-prev " aria-label="Previous page: Introduccion Middleware">
+                <a href="../cookieParser/part1.html" class="navigation navigation-prev " aria-label="Previous page: Introducción sesiones">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="part3.html" class="navigation navigation-next " aria-label="Next page: Middleware de nivel enrutador">
+                <a href="part1.html" class="navigation navigation-next " aria-label="Next page: Insercion de datos en Json">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1358,7 +1327,7 @@ app.get(<span class="hljs-string">&apos;/user/:id&apos;</span>, <span class="hlj
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Middleware de nivel de aplicación","level":"11.1.2","depth":2,"next":{"title":"Middleware de nivel enrutador","level":"11.1.3","depth":2,"path":"capitulos/express_middleware/part3.md","ref":"capitulos/express_middleware/part3.md","articles":[]},"previous":{"title":"Introduccion Middleware","level":"11.1.1","depth":2,"path":"capitulos/express_middleware/part1.md","ref":"capitulos/express_middleware/part1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["emphasize","todo","page-footer-ex","bootstrap-callout","page-toc","youtube"],"root":"docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"emphasize":{},"youtube":{},"todo":{},"page-footer-ex":{"copyright":"mrcode","update_format":"YYYY-MM-DD HH:mm:ss","update_label":"update"},"search":{},"page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":">=3.0.0"},"file":{"path":"capitulos/express_middleware/part2.md","mtime":"2017-03-17T10:11:07.045Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-19T15:01:30.720Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Práctica de Sesiones y Cookies","level":"18.1","depth":1,"next":{"title":"Insercion de datos en Json","level":"18.1.1","depth":2,"path":"capitulos/practica_sessiones_cookie/part1.md","ref":"capitulos/practica_sessiones_cookie/part1.md","articles":[]},"previous":{"title":"Introducción sesiones","level":"17.2.1","depth":2,"path":"capitulos/cookieParser/part1.md","ref":"capitulos/cookieParser/part1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["emphasize","todo","page-footer-ex","bootstrap-callout","page-toc","youtube"],"root":"docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"emphasize":{},"youtube":{},"todo":{},"page-footer-ex":{"copyright":"mrcode","update_format":"YYYY-MM-DD HH:mm:ss","update_label":"update"},"search":{},"page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":">=3.0.0"},"file":{"path":"capitulos/practica_sessiones_cookie/part1.md","mtime":"2017-03-19T14:34:02.259Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-19T15:01:30.720Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
