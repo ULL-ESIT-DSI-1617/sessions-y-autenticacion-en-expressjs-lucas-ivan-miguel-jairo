@@ -18,7 +18,7 @@
     * [Jairo](https://afternoon-basin-63831.herokuapp.com/)
     * [Iván](https://sessions-autenticacion.herokuapp.com/)
 * [Enlace a instrucciones de la práctica](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/practicas/practicalearningcookies.html)
-* [Enlace a repositorio de la práctica](https://github.com/ULL-ESIT-DSI-1617/estudiar-cookies-y-sessions-en-expressjs-jairo-miguel-lucas-ivan.git)
+* [Enlace a repositorio de la práctica](https://github.com/ULL-ESIT-DSI-1617/sessions-y-autenticacion-en-expressjs-lucas-ivan-miguel-jairo)
 * [Enlace a página asignatura](https://campusvirtual.ull.es/1617/course/view.php?id=1136)
 
 
