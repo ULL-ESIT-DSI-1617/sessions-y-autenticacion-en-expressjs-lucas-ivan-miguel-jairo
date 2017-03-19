@@ -15,8 +15,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ULL-ESIT-DSI-1617/estudiar-las-rutas-en-expressjs-jairo-lucas-miguel-ivan.git",
-    "wiki": "https://github.com/ULL-ESIT-DSI-1617/estudiar-las-rutas-en-expressjs-jairo-lucas-miguel-ivan.wiki"
+    "url": "https://github.com/ULL-ESIT-DSI-1617/sessions-y-autenticacion-en-expressjs-lucas-ivan-miguel-jairo.git",
+    "wiki": "https://github.com/ULL-ESIT-DSI-1617/sessions-y-autenticacion-en-expressjs-lucas-ivan-miguel-jairo.wiki"
   },
   "keywords": [
     "gitbook",
@@ -26,12 +26,12 @@
   "author": "Jose Lucas",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ULL-ESIT-DSI-1617/estudiar-las-rutas-en-expressjs-jairo-lucas-miguel-ivan/issues"
+    "url": "https://github.com/ULL-ESIT-DSI-1617/sessions-y-autenticacion-en-expressjs-lucas-ivan-miguel-jairo/issues"
   },
   "engines": {
     "node": "^0.10.1"
   },
-  "homepage": "https://github.com/ULL-ESIT-DSI-1617/estudiar-las-rutas-en-expressjs-jairo-lucas-miguel-ivan#readme",
+  "homepage": "https://github.com/ULL-ESIT-DSI-1617/sessions-y-autenticacion-en-expressjs-lucas-ivan-miguel-jairo#readme",
   "devDependencies": {
     "async": "^1.4.0",
     "express": "^4.15.2",

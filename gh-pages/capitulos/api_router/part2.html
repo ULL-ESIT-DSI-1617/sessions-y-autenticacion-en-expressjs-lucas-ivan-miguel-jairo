@@ -86,10 +86,6 @@
     <div class="book-summary">
         
             
-<div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search" />
-</div>
-
             
                 <nav role="navigation">
                 
@@ -1249,9 +1245,6 @@
                     <div class="page-wrapper" tabindex="-1" role="main">
                         <div class="page-inner">
                             
-<div id="book-search-results">
-    <div class="search-noresults">
-    
                                 <section class="normal markdown-section">
                                 
                                 <blockquote>
@@ -1290,9 +1283,9 @@ se no cuenta a la hora de realizar estos partidos, por ejemplo &quot;GET /&quot;
 <p>Tambi&#xE9;n puede utilizar expresiones &#xFA;tiles-regulares si tiene limitaciones muy espec&#xED;ficas, 
 por ejemplo, lo siguiente ser&#xED;a igualar &quot;GET / cometa / 71dbb9c&quot;, as&#xED; como &quot;GET /commits/71dbb9c..4c084f9&quot;.</p>
 <pre><code class="lang-javascript">router.get(<span class="hljs-regexp">/^\/commits\/(\w+)(?:\.\.(\w+))?$/</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>)</span>{
-  <span class="hljs-keyword">var</span> <span class="hljs-keyword">from</span> = req.params[<span class="hljs-number">0</span>];
+  <span class="hljs-keyword">var</span> from = req.params[<span class="hljs-number">0</span>];
   <span class="hljs-keyword">var</span> to = req.params[<span class="hljs-number">1</span>] || <span class="hljs-string">&apos;HEAD&apos;</span>;
-  res.send(<span class="hljs-string">&apos;commit range &apos;</span> + <span class="hljs-keyword">from</span> + <span class="hljs-string">&apos;..&apos;</span> + to);
+  res.send(<span class="hljs-string">&apos;commit range &apos;</span> + from + <span class="hljs-string">&apos;..&apos;</span> + to);
 });
 </code></pre>
 <hr>
@@ -1441,27 +1434,11 @@ app.use(express.static(__dirname + <span class="hljs-string">&apos;/uploads&apos
 sus puntos de montaje para otros routers pueden beneficiarse de precarga utilizando los par&#xE1;metros con nombre. </p>
 </blockquote>
 <footer class="page-footer-ex"> <span class="page-footer-ex-copyright">mrcode</span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<span class="page-footer-ex-footer-update">update
-2017-03-17 10:11:07
+2017-03-19 17:50:02
 </span></footer>
                                 
                                 </section>
                             
-    </div>
-    <div class="search-results">
-        <div class="has-results">
-            
-            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
-            <ul class="search-results-list"></ul>
-            
-        </div>
-        <div class="no-results">
-            
-            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
-            
-        </div>
-    </div>
-</div>
-
                         </div>
                     </div>
                 
@@ -1485,7 +1462,7 @@ sus puntos de montaje para otros routers pueden beneficiarse de precarga utiliza
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Métodos","level":"12.1.2","depth":2,"next":{"title":"Cookie","level":"13.1","depth":1,"path":"capitulos/cookies/part1.md","ref":"capitulos/cookies/part1.md","articles":[{"title":"Cookie","level":"13.1.1","depth":2,"path":"capitulos/cookies/part1.md","ref":"capitulos/cookies/part1.md","articles":[]},{"title":"Inspector de Almacenamiento","level":"13.1.2","depth":2,"path":"capitulos/cookies/part2.md","ref":"capitulos/cookies/part2.md","articles":[]}]},"previous":{"title":"¿Qué es?","level":"12.1.1","depth":2,"path":"capitulos/api_router/part1.md","ref":"capitulos/api_router/part1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["emphasize","todo","page-footer-ex","bootstrap-callout","page-toc","youtube"],"root":"docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"emphasize":{},"youtube":{},"todo":{},"page-footer-ex":{"copyright":"mrcode","update_format":"YYYY-MM-DD HH:mm:ss","update_label":"update"},"search":{},"page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":">=3.0.0"},"file":{"path":"capitulos/api_router/part2.md","mtime":"2017-03-17T10:11:07.045Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-19T15:01:30.720Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Métodos","level":"12.1.2","depth":2,"next":{"title":"Cookie","level":"13.1","depth":1,"path":"capitulos/cookies/part1.md","ref":"capitulos/cookies/part1.md","articles":[{"title":"Cookie","level":"13.1.1","depth":2,"path":"capitulos/cookies/part1.md","ref":"capitulos/cookies/part1.md","articles":[]},{"title":"Inspector de Almacenamiento","level":"13.1.2","depth":2,"path":"capitulos/cookies/part2.md","ref":"capitulos/cookies/part2.md","articles":[]}]},"previous":{"title":"¿Qué es?","level":"12.1.1","depth":2,"path":"capitulos/api_router/part1.md","ref":"capitulos/api_router/part1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["emphasize","todo","page-footer-ex","bootstrap-callout","page-toc","youtube"],"root":"docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"emphasize":{},"youtube":{},"todo":{},"page-footer-ex":{"copyright":"mrcode","update_format":"YYYY-MM-DD HH:mm:ss","update_label":"update"},"search":{"maxIndexSize":1000000},"page-toc":{"position":"before-first","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":">=3.0.0"},"file":{"path":"capitulos/api_router/part2.md","mtime":"2017-03-19T17:50:02.571Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-19T19:29:35.591Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -1503,7 +1480,7 @@ sus puntos de montaje para otros routers pueden beneficiarse de precarga utiliza
         
     
         
-        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        <script src="../../gitbook/gitbook-plugin-search/lunr.min.js"></script>
         
     
         
@@ -1523,7 +1500,7 @@ sus puntos de montaje para otros routers pueden beneficiarse de precarga utiliza
         
     
         
-        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
         
     
 
