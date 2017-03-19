@@ -44,7 +44,7 @@ let auth = function(req, res, next) {
     return next();
   }
   else{
-     //  return res.render('login', {message: 'User NOT registred'+res.sendStatus(401)}); 
+       // res.render('login', {message: 'User NOT registred'+res.sendStatus(401)}); 
        return res.sendStatus(401); // https://httpstatuses.com/401
   
     
@@ -165,7 +165,6 @@ app.get('/logout', function (req, res) {
 // Get content endpoint
 app.get('/content/*?',auth );
 app.use('/content', express.static(path.join(__dirname, 'gh-pages')));
-
 
 // Crear puesto de escucha
 app.set('port', (process.env.PORT || 8080));

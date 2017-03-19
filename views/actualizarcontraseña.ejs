@@ -28,7 +28,7 @@
          <li><a href="/registro">Registrarse</a></li>
          <li><a href="/loguearse">Login</a></li>
          <li><a href="/actualiza">Actualizar Contraseña</a></li>
-         <li><a href="/content">Libro</a></li>
+         <li><a href="/libro">Libro</a></li>
          <li><a href="/logout">Cerrar Sesion</a></li>
       </ul>
     </div>
@@ -48,42 +48,49 @@
       </div>
       
       <div class="row">
-        <div class="input-field col s12 m12">
+        <div class="col s3"></div>
+        <div class="input-field col s6">
           <input name="username" type="text" class="validate" >
           <label for="username">Username</label>
         </div>
+        <div class="col s3"></div>
       </div>
       <div class="row">
-        <div class="input-field col s12">
+        <div class="col s3"></div>
+        <div class="input-field col s6">
           <input name="password" type="password" class="validate">
           <label for="password">Password</label>
         </div>
+        <div class="col s3"></div>
       </div>
       <div class="row">
-        <div class="input-field col s12">
+        <div class="col s3"></div>
+        <div class="input-field col s6">
           <input name="newpassword" type="password" class="validate">
           <label for="newpassword">Nuevo password:</label>
         </div>
+        <div class="col s3"></div>
       </div>
       <div class="row">
-        <div class="input-field col s12">
+        <div class="col s3"></div>
+        <div class="input-field col s6">
           <input id="actualiza" type="submit" class="validate waves-effect waves-light btn" value="Actualiza" />
         </div>
+        <div class="col s3"></div>
       </div>
       
     </form>
+    
     <div class="col s6">
          <h2 class="center">Funcionamiento de Actualizar</h2>
          <p> 
-             Explicar registro.
-         </P>
-      
-       
+              Se comporbara si en el archivo user.josn esta el usuario y 
+              la contraseña que le hemos pasado, en caso positivo se introducira 
+              la nueva contraseña en su lugar. En el caso de que se realice la
+              la acción con exito en la parte derecha superior apaecera un mensaje.
+         </p>
     </div>
-    
-    
   </div>
-        
   </div>
 
   <!--Import jQuery before materialize.js-->
