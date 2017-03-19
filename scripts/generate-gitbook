@@ -1,3 +1,0 @@
-
-
-gitbook build `pwd` ./gh-pages
