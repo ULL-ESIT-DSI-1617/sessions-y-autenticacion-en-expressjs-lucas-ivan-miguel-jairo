@@ -1,13 +1,13 @@
 "use strict";
-let express = require('express'),
+var express = require('express'),
     app = express(),
     session = require('express-session');
-let cookieParser = require('cookie-parser');
-let path = require('path');
-let util = require("util");
-let bodyParser = require('body-parser')
+var cookieParser = require('cookie-parser');
+var path = require('path');
+var util = require("util");
+var bodyParser = require('body-parser')
 
-let bcrypt = require("bcrypt-nodejs");
+var bcrypt = require("bcrypt-nodejs");
 
 var users = require('./users.json')
 var fs = require('fs');
@@ -64,7 +64,7 @@ app.post('/login', function (req, res) {
             req.session.admin = true;
             res.render('libro', {message:"Bienvenido "+req.body.username});
   } else {
-          console.log(`login ${util.inspect(req.query)} failed`);
+          console.log('login ${util.inspect(req.query)} failed');
           res.render('login',{message: 'Failed. You are user not logged'});
          // res.send(`login ${util.inspect(req.query)} failed. You are ${req.session.user || 'not logged'}`);
   }
@@ -141,7 +141,7 @@ app.post('/act', function (req, res)
   } 
   else 
   {
-    console.log(`Update ${util.inspect(req.query)} failed`);
+    console.log('Update ${util.inspect(req.query)} failed');
        res.render('actualizarcontraseña',{message: 'Actualización Fallida' });
     //res.send(layout(`login ${util.inspect(req.query)} failed. You are ${req.session.user || 'not logged'}`));
   }
