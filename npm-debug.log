@@ -2,16 +2,16 @@
 1 verbose cli [ '/home/ubuntu/.nvm/versions/node/v4.5.0/bin/node',
 1 verbose cli   '/home/ubuntu/workspace/auto/sessions-y-autenticacion-en-expressjs-lucas-ivan-miguel-jairo/node_modules/.bin/npm',
 1 verbose cli   'run',
-1 verbose cli   'deploy-wiki' ]
+1 verbose cli   'deploy' ]
 2 info using npm@2.4.1
 3 info using node@v4.5.0
-4 verbose run-script [ 'predeploy-wiki', 'deploy-wiki', 'postdeploy-wiki' ]
-5 info predeploy-wiki gitbook-boilerplate@0.0.1
-6 info deploy-wiki gitbook-boilerplate@0.0.1
+4 verbose run-script [ 'predeploy', 'deploy', 'postdeploy' ]
+5 info predeploy gitbook-boilerplate@0.0.1
+6 info deploy gitbook-boilerplate@0.0.1
 7 verbose unsafe-perm in lifecycle true
-8 info gitbook-boilerplate@0.0.1 Failed to exec deploy-wiki script
-9 verbose stack Error: gitbook-boilerplate@0.0.1 deploy-wiki: `./scripts/losh deploy-wiki`
-9 verbose stack Exit status 128
+8 info gitbook-boilerplate@0.0.1 Failed to exec deploy script
+9 verbose stack Error: gitbook-boilerplate@0.0.1 deploy: `npm run build && npm run deploy-gitbook && npm run deploy-wiki`
+9 verbose stack Exit status 1
 9 verbose stack     at EventEmitter.<anonymous> (/home/ubuntu/workspace/auto/sessions-y-autenticacion-en-expressjs-lucas-ivan-miguel-jairo/node_modules/npm/lib/utils/lifecycle.js:213:16)
 9 verbose stack     at emitTwo (events.js:87:13)
 9 verbose stack     at EventEmitter.emit (events.js:172:7)
@@ -23,17 +23,17 @@
 10 verbose pkgid gitbook-boilerplate@0.0.1
 11 verbose cwd /home/ubuntu/workspace/auto/sessions-y-autenticacion-en-expressjs-lucas-ivan-miguel-jairo
 12 error Linux 4.8.8-c9
-13 error argv "/home/ubuntu/.nvm/versions/node/v4.5.0/bin/node" "/home/ubuntu/workspace/auto/sessions-y-autenticacion-en-expressjs-lucas-ivan-miguel-jairo/node_modules/.bin/npm" "run" "deploy-wiki"
+13 error argv "/home/ubuntu/.nvm/versions/node/v4.5.0/bin/node" "/home/ubuntu/workspace/auto/sessions-y-autenticacion-en-expressjs-lucas-ivan-miguel-jairo/node_modules/.bin/npm" "run" "deploy"
 14 error node v4.5.0
 15 error npm  v2.4.1
 16 error code ELIFECYCLE
-17 error gitbook-boilerplate@0.0.1 deploy-wiki: `./scripts/losh deploy-wiki`
-17 error Exit status 128
-18 error Failed at the gitbook-boilerplate@0.0.1 deploy-wiki script './scripts/losh deploy-wiki'.
+17 error gitbook-boilerplate@0.0.1 deploy: `npm run build && npm run deploy-gitbook && npm run deploy-wiki`
+17 error Exit status 1
+18 error Failed at the gitbook-boilerplate@0.0.1 deploy script 'npm run build && npm run deploy-gitbook && npm run deploy-wiki'.
 18 error This is most likely a problem with the gitbook-boilerplate package,
 18 error not with npm itself.
 18 error Tell the author that this fails on your system:
-18 error     ./scripts/losh deploy-wiki
+18 error     npm run build && npm run deploy-gitbook && npm run deploy-wiki
 18 error You can get their info via:
 18 error     npm owner ls gitbook-boilerplate
 18 error There is likely additional logging output above.
