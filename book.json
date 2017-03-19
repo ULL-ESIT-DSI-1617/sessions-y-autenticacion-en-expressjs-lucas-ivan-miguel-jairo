@@ -1,0 +1,14 @@
+{
+  "root": "docs",
+  "gitbook": ">=3.0.0",
+  "plugins": ["emphasize","todo",  "page-footer-ex","bootstrap-callout","page-toc","youtube" ],
+  "pluginsConfig": {       
+        "page-footer-ex":{
+            "copyright":"mrcode",
+            "update_label":"update",
+            "update_format":"YYYY-MM-DD HH:mm:ss"
+        }
+  
+  }
+  
+}

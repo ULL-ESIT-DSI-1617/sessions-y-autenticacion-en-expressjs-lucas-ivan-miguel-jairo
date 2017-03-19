@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Login Box HTML Code - www.PSDGraphics.com</title>
+
+ <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="js/materialize.min.js"></script>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      
+<link href="login-box.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="#263238 blue-grey darken-4">
+  <div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo right"><%- message %></a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+         <li><a href="/">Inicio</a></li>
+         <li><a href="/registro">Registrarse</a></li>
+         <li><a href="/loguearse">Login</a></li>
+         <li><a href="/actualiza">Actualizar Contraseña</a></li>
+         <li><a href="/libro">Libro</a></li>
+         <li><a href="/logout">Cerrar Sesion</a></li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+  <br />
+  <br />
+  <div class="container" >
+  <div class="row #90caf9 blue lighten-3" >
+   
+      <form method="post" id="login-box" action="/act" class="col s6">
+        <div class="row">
+       <div class="col s12 center">
+         <h2>Actualiza Contraseña</h2>
+         
+     </div>
+      </div>
+      
+      <div class="row">
+        <div class="col s3"></div>
+        <div class="input-field col s6">
+          <input name="username" type="text" class="validate" >
+          <label for="username">Username</label>
+        </div>
+        <div class="col s3"></div>
+      </div>
+      <div class="row">
+        <div class="col s3"></div>
+        <div class="input-field col s6">
+          <input name="password" type="password" class="validate">
+          <label for="password">Password</label>
+        </div>
+        <div class="col s3"></div>
+      </div>
+      <div class="row">
+        <div class="col s3"></div>
+        <div class="input-field col s6">
+          <input name="newpassword" type="password" class="validate">
+          <label for="newpassword">Nuevo password:</label>
+        </div>
+        <div class="col s3"></div>
+      </div>
+      <div class="row">
+        <div class="col s3"></div>
+        <div class="input-field col s6">
+          <input id="actualiza" type="submit" class="validate waves-effect waves-light btn" value="Actualiza" />
+        </div>
+        <div class="col s3"></div>
+      </div>
+      
+    </form>
+    
+    <div class="col s6">
+         <h2 class="center">Funcionamiento de Actualizar</h2>
+         <p> 
+              Se comporbara si en el archivo user.josn esta el usuario y 
+              la contraseña que le hemos pasado, en caso positivo se introducira 
+              la nueva contraseña en su lugar. En el caso de que se realice la
+              la acción con exito en la parte derecha superior apaecera un mensaje.
+         </p>
+    </div>
+  </div>
+  </div>
+
+  <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+</body>
+</html>
+
