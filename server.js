@@ -41,7 +41,6 @@ app.use(bodyParser.json());
 // Authentication and Authorization Middleware
 let auth = function(req, res, next) {
   if (req.session && req.session.user in users){
-    
     return next();
   }
   else{
@@ -99,8 +98,8 @@ app.get('/libro', function(req, res) {
 app.post('/reg', function (req, res) {
   var obj = require('./users.json');
   
-  
- if(req.body.password == req.body.password2 && !(req.body.username in users) )
+ if((req.body.username!="undefined") && (req.body.password !="undefined") &&
+ req.body.password == req.body.password2 && !(req.body.username in users) )
   {
         obj[req.body.username] = bcrypt.hashSync(req.body.password);
         console.log("Mi objeto "+ obj);
@@ -123,7 +122,7 @@ app.post('/act', function (req, res)
   if (!req.body.username || !req.body.password) 
   {
         console.log('failed update');
-        res.send('failed update');
+        res.render('actualizarcontraseña',{message: 'Actualización Fallida' });
   } 
   
   else if(req.body.username in users  &&
@@ -138,11 +137,12 @@ app.post('/act', function (req, res)
             obj[req.body.username] = bcrypt.hashSync(req.body.newpassword);
             console.log("Este es mi nuevo password : " + req.body.username);
            
-          res.render('login',{message: 'Actualizado la contraseña' });
+          res.render('actualizarcontraseña',{message: 'Actualizado la contraseña' });
   } 
   else 
   {
     console.log(`Update ${util.inspect(req.query)} failed`);
+       res.render('actualizarcontraseña',{message: 'Actualización Fallida' });
     //res.send(layout(`login ${util.inspect(req.query)} failed. You are ${req.session.user || 'not logged'}`));
   }
   
