@@ -13,7 +13,7 @@
     * [Lucas](http://10.6.129.243:8086/)
     * [Miguel](http://10.6.129.246:8083/)
 * Despliegue en Heroku
-    * [Lucas](https://dsi-pract5.herokuapp.com/)
+    * [Lucas](https://dsi-p5.herokuapp.com/)
     * [Miguel](https://sleepy-anchorage-55913.herokuapp.com/)
     * [Jairo](https://afternoon-basin-63831.herokuapp.com/)
     * [Iván](https://sessions-autenticacion.herokuapp.com/)
